@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FayeChatting</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application", "http://localhost:9292/faye.js", "welcome" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= link_to "Logout", destroy_user_session_path, {:method => "delete"} if current_user%>
+<%= yield %>
+
+</body>
+</html>

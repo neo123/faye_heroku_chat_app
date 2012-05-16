@@ -1,0 +1,5 @@
+<li>
+  <span class="username"><%= message.username %> :&nbsp;&nbsp;</span>
+  <span class="created_at"><%= message.created_at.strftime("%H:%M:%S") %></span>
+  <%= message.content.html_safe %>
+</li>
